@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Allu Mahendra – AI & Machine Learning Student | Personal Portfolio" />
+  <title>Allu Mahendra | AI & ML Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AM<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#publication" class="nav-link">Publication</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-image-wrapper reveal">
+        <div class="hero-image-ring"></div>
+        <img src="assets/images/profile.png" alt="Allu Mahendra" class="hero-image" id="profileImg" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting reveal-delay-1">👋 Hello, I'm</p>
+        <h1 class="hero-name reveal-delay-2">Allu <span class="gradient-text">Mahendra</span></h1>
+        <p class="hero-title reveal-delay-3">
+          <span class="typed-wrapper">
+            <span class="typed" id="typed"></span><span class="cursor">|</span>
+          </span>
+        </p>
+        <p class="hero-intro reveal-delay-4">
+          Computer Science undergraduate passionate about Artificial Intelligence,
+          Machine Learning, and building innovative solutions.
+        </p>
+        <div class="hero-buttons reveal-delay-5">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#" class="btn btn-outline" id="resumeBtn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+        <div class="hero-socials reveal-delay-5">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:allumahendra3@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-block reveal-left">
+          <div class="about-image-card">
+            <img src="assets/images/profile.png" alt="Allu Mahendra" />
+            <div class="about-badge">
+              <i class="fas fa-brain"></i>
+              <span>AI/ML</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-block reveal-right">
+          <h3>Who I Am</h3>
+          <p>
+            I am a Computer Science Engineering student specializing in Artificial Intelligence
+            and Machine Learning at <strong>Kalasalingam Academy of Research and Education</strong>.
+            I enjoy developing intelligent systems that solve real-world problems such as
+            <strong>deepfake detection</strong> and <strong>voice-based authentication systems</strong>.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">7.93</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1</span>
+              <span class="stat-label">Publication</span>
+            </div>
+          </div>
+          <div class="about-tags">
+            <span class="tag">🤖 Machine Learning</span>
+            <span class="tag">🧠 Deep Learning</span>
+            <span class="tag">👁️ Computer Vision</span>
+            <span class="tag">🔐 Security Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">My academic journey</span>
+        <h2 class="section-title">Edu<span class="gradient-text">cation</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="edu-badge">B.Tech</span>
+              <span class="edu-year">2023 – Present</span>
+            </div>
+            <h3 class="edu-degree">Computer Science Engineering (AIML)</h3>
+            <p class="edu-institution">
+              <i class="fas fa-university"></i>
+              Kalasalingam Academy of Research and Education
+            </p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">CGPA</span>
+              <div class="cgpa-bar-wrapper">
+                <div class="cgpa-bar" data-cgpa="79.3">
+                  <div class="cgpa-fill"></div>
+                </div>
+              </div>
+              <span class="cgpa-value">7.93 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I work with</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skills-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fas fa-c"></i> C</span>
+            <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-pill"><i class="fas fa-flask"></i> Flask</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-pill"><i class="fab fa-github"></i> GitHub</span>
+            <span class="skill-pill"><i class="fas fa-code-branch"></i> VS Code</span>
+            <span class="skill-pill"><i class="fas fa-eye"></i> OpenCV</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <h3>Domains</h3>
+          <div class="skill-pills">
+            <span class="skill-pill"><i class="fas fa-robot"></i> Machine Learning</span>
+            <span class="skill-pill"><i class="fas fa-network-wired"></i> Deep Learning</span>
+            <span class="skill-pill"><i class="fas fa-laptop-code"></i> Web Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What I've built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card-glow"></div>
+          <div class="project-icon-wrapper">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="project-number">01</div>
+          <h3 class="project-title">AI-Based Fake Media Detection</h3>
+          <p class="project-description">
+            Developed a machine learning system to detect fake images and videos by analyzing
+            facial inconsistencies in manipulated media.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">CNN</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="#" class="project-link project-link-demo">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-glow"></div>
+          <div class="project-icon-wrapper">
+            <i class="fas fa-microphone-lines"></i>
+          </div>
+          <div class="project-number">02</div>
+          <h3 class="project-title">VoiceAuth – Voice-Based Authentication System</h3>
+          <p class="project-description">
+            Developed a voice authentication system for securing mobile applications using
+            MFCC feature extraction and machine learning.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MFCC</span>
+            <span class="tech-tag">Speech Processing</span>
+            <span class="tech-tag">Machine Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="#" class="project-link project-link-demo">
+              <i class="fas fa-external-link-alt"></i> Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATION SECTION ===== -->
+  <section id="publication" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Research work</span>
+        <h2 class="section-title">Pub<span class="gradient-text">lication</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-icon">
+          <i class="fas fa-file-lines"></i>
+        </div>
+        <div class="pub-content">
+          <span class="pub-badge">IEEE Conference 2026</span>
+          <h3 class="pub-title">
+            Voice Authentication for Secure Mobile Applications Using MFCC and Machine Learning
+          </h3>
+          <p class="pub-detail">
+            <i class="fas fa-calendar-alt"></i> Published: 2026 &nbsp;|&nbsp;
+            <i class="fas fa-building-columns"></i> IEEE Conference
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Let's connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Talk!</h3>
+          <p>Feel free to reach out for collaborations, opportunities, or just a friendly chat about AI and technology.</p>
+          <div class="contact-items">
+            <a href="mailto:allumahendra3@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">allumahendra3@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+917842723632" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">+91 7842723632</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Andhra Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-social" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-social" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-block reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Collaboration Opportunity" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hello Mahendra, I'd like to..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i> Message sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Allu <span class="gradient-text">Mahendra</span></p>
+        <p class="footer-tagline">AI & Machine Learning Student</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Allu Mahendra · Made with <i class="fas fa-heart"></i> and ☕
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
